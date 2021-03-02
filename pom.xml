@@ -14,7 +14,7 @@
         <module>credit-service</module>
         <module>inventory-api</module>
         <module>inventroy-service</module>
-        <module>warehouse-api</module>
+        <module>warehouse-api</module>:
         <module>warehouse-service</module>
         <module>zull-gateway</module>
         <module>order-service</module>

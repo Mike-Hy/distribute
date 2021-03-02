@@ -1,0 +1,26 @@
+eureka:
+    client:
+        eureka-server-u-r-l-context: http://localhost:8761/eureka
+        registryFetchIntervalSeconds: 1
+        leaseRenewalIntervalInSeconds: 1
+    instance:
+        hostname: localhost
+
+ribbon:
+    eager-load:
+        enabled: true
+    ConnectTimeout: 1000
+    ReadTimeout: 1000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 1
+
+server:
+    port: 8083
+spring:
+    application:
+        name: warehouse-service
+
+feign:
+    hystrix:
+        enabled: false

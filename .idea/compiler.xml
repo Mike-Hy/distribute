@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-api" />
+        <module name="inventroy-service" />
+        <module name="common-util-api" />
+        <module name="warehouse-api" />
+        <module name="credit-service" />
+        <module name="warehouse-service" />
+        <module name="inventory-api" />
+        <module name="zull-gateway" />
+        <module name="order-service" />
+        <module name="eureka-server" />
+        <module name="credit-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-api" target="1.8" />
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.5" />
+      <module name="logging" target="1.5" />
+      <module name="primary-source" target="1.5" />
+      <module name="projects" target="1.5" />
+      <module name="servlet" target="1.5" />
+      <module name="servlets" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="distribute" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,41 @@
+eureka:
+    client:
+        eureka-server-u-r-l-context: http://localhost:8761/eureka
+        registryFetchIntervalSeconds: 1
+        leaseRenewalIntervalInSeconds: 1
+    instance:
+        hostname: localhost
+
+ribbon:
+    eager-load:
+        enabled: true
+    ConnectTimeout: 1000
+    ReadTimeout: 1000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 1
+
+server:
+    port: 8084
+
+spring:
+    application:
+        name: zull-gateway
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: 123456
+        url: jdbc:mysql://10.0.0.130:3306/test?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+        username: root
+
+zuul:
+    retryable: true
+    ribbon:
+        eager-load:
+            enabled: true
+
+feign:
+    hystrix:
+        enabled: false
+####zuul默认路由规则
+##localhost:8084/order-service/order/create?productId=555&num=33&userId=44&credit=55&gray=true
+##不配置路由映射关系，会默认项目名
